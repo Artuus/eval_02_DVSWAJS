@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>JEU JS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+
+    <meta name="description" description="Jeu de hasard à deux joueurs">
+  </head>
+  <body>
+
+    <div class="playground">
+        <div class="player">
+            <div class="playerInfo">
+                <p class="nom">PLAYER 1</p>
+                <div id="scorePlayer1" name="player1" class="score">0</div>
+            </div>
+            
+            <div class="current">
+              <p>Current</p>
+              <div class="current1 score" id="current1">0</div>
+            </div>
+        </div>
+        <div class="buttons">
+            
+            <button id="newGame" class="btn btn-primary">NEW GAME</button>
+            <div class="rollAmount" id="rollAmount">
+              <div class="roll1">1</div>
+              <div class="roll2">2</div>
+              <div class="roll3">3</div>
+              <div class="roll4">4</div>
+              <div class="roll5">5</div>
+              <div class="roll6">6</div>
+            </div>
+            <button id="rollDice" class="btn btn-primary">ROLL DICE</button>
+            <button id="hold" class="btn btn-primary">HOLD</button>
+        </div>
+        <div class="player">
+            <p>PLAYER 2</p>
+            <div id="scorePlayer2">0</div>
+            <div class="current">
+                <p>Current</p>
+                <div class="current2" id='current2'>0</div>
+            </div>
+        </div>
+    </div>
+    <div class="background"></div>
+    
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+    
+  </body>
+</html>
