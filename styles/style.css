@@ -26,7 +26,6 @@ body .playground {
 }
 
 body .playground .player {
-  background: #F7F7F7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,6 +38,7 @@ body .playground .player {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 8em;
 }
 
 body .playground .player .playerInfo {
@@ -52,10 +52,14 @@ body .playground .player .playerInfo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 2.5rem;
 }
 
 body .playground .player .playerInfo .score {
-  font-size: 3em;
+  font-size: 8rem;
+  font-weight: 100;
+  color: #EB4D4C;
+  padding-top: 0.5rem;
 }
 
 body .playground .player .current {
@@ -77,6 +81,8 @@ body .playground .player .current {
 
 body .playground .player .current div {
   font-size: 2.5em;
+  font-weight: 100;
+  color: #FFFFFF;
 }
 
 body .playground .buttons {
@@ -87,8 +93,9 @@ body .playground .buttons {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -98,9 +105,31 @@ body .playground .buttons button {
   font-family: "lato";
   font-size: 1.5em;
   font-weight: 200;
-  padding: 0;
   border: none;
   background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 2em 0 2em 0;
+}
+
+body .playground .buttons button img {
+  padding-right: 0.5em;
+  height: 1.2em;
+  color: #EB4D4C;
+  -webkit-filter: brightness(0) saturate(100%) invert(61%) sepia(71%) saturate(6033%) hue-rotate(335deg) brightness(102%) contrast(85%);
+          filter: brightness(0) saturate(100%) invert(61%) sepia(71%) saturate(6033%) hue-rotate(335deg) brightness(102%) contrast(85%);
+}
+
+body .playground .buttons .rollAmount {
+  padding: 4em 0 4em 0;
 }
 
 body .background {

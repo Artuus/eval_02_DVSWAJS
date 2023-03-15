@@ -2,14 +2,11 @@
 $text-light: white;
 $text-dark: rgb(34, 32, 32);
 $shadow-light: 4px 4px 10px #d6d6d6;
-$background-dark: #002642;
-$background-mid: #706C61;
-$background-light: #F8F4E3;
-$colorA: #002642;
-$colorB: #706C61;
-$colorC: #F8F4E3;
-$colorD: #0075F2;
-$colorE: #F24236;
+
+$colorA: #F7F7F7;
+$colorB: #FFFFFF;
+$colorC: #EB4D4C;
+
 
 *{
     text-decoration: none;
@@ -28,18 +25,23 @@ body{
         display: flex;
         justify-content: space-evenly;
         height: 100%;
-        .player{
-            background: #F7F7F7;
+
+        .player{    
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
+            padding: 8em;
             .playerInfo{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                font-size: 2.5rem;
                 .score{
-                    font-size: 3em;
+                    font-size: 8rem;
+                    font-weight: 100;
+                    color: $colorC;
+                    padding-top: 0.5rem;
                 }
 
             }
@@ -51,28 +53,44 @@ body{
                 font-size: 2em;
                 div{
                     font-size: 2.5em;
+                    font-weight: 100;
+                    color: $colorB;
                 }
             }
         }
         .buttons{
             display:flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             
             button{
                 font-family: "lato";
                 font-size: 1.5em;
                 font-weight: 200;
-                padding: 0;
                 border: none;
                 background: none;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 2em 0 2em 0 ;
+                
+                img{
+                    padding-right: 0.5em;
+                    height: 1.2em; 
+                    color: #EB4D4C;
+                    filter: brightness(0) saturate(100%) invert(61%) sepia(71%) saturate(6033%) hue-rotate(335deg) brightness(102%) contrast(85%);
+                }
+            }
+            .rollAmount{
+                padding: 4em 0 4em 0 ;
             }
             
         }
     }
     .background{
-        background: #F7F7F7;
+        background: $colorA;
         position: absolute;
         height: 100vh;
         width: 50vw;
