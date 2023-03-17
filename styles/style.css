@@ -55,6 +55,46 @@ body .playground .player .playerInfo {
   font-size: 2.5rem;
 }
 
+body .playground .player .playerInfo .playerNamePlate {
+  padding-left: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .playground .player .playerInfo .playerNamePlate .turnDOT {
+  width: 1em;
+}
+
+body .playground .player .playerInfo .playerNamePlate #turnDotPlayer1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .playground .player .playerInfo .playerNamePlate #turnDotPlayer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0%;
+}
+
 body .playground .player .playerInfo .score {
   font-size: 8rem;
   font-weight: 100;

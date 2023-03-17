@@ -37,6 +37,27 @@ body{
                 flex-direction: column;
                 align-items: center;
                 font-size: 2.5rem;
+                .playerNamePlate{
+                    padding-left: 1em;
+                    display: flex;
+                    flex-direction: row;
+                    .turnDOT{
+                        width : 1em;
+                    }
+                    #turnDotPlayer1{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    #turnDotPlayer2{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        opacity: 0%;
+                    }
+                    
+                 
+                }
                 .score{
                     font-size: 8rem;
                     font-weight: 100;
