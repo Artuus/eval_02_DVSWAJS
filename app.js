@@ -104,3 +104,40 @@ boutonPlay.addEventListener('click', () =>{
   playerRound=0;
 })
 
+const canvas = document.getElementById('canvas');
+let ctx;
+if (canvas.getContext) {
+   ctx = canvas.getContext('2d') ;
+   ctx.fillStyle = 'green';
+   ctx.fillRect(0, 0, 150, 150)
+
+
+  ctx.beginPath();
+  ctx.fillStyle = '#EB4D4C';
+  ctx.arc(100, 100, 20, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle = '#EB4D4C';
+  ctx.arc(50, 100, 20, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle = '#EB4D4C';
+  ctx.arc(50, 50, 20, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle = '#EB4D4C';
+  ctx.arc(100, 50, 20, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.stroke();
+
+
+
+} else {
+   console.log('canevas non supporté')
+ }
