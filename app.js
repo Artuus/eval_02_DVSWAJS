@@ -77,10 +77,43 @@ function drawCircle(x,y){
 };
 
 function drawRoll(input){
-  
+  ctx.clearRect(0,0,200,200)
   if (input==1){
     drawCircle(100,100);
   }
+  if (input==2){
+    drawCircle(150,150);
+    drawCircle(50,50);
+  }
+  if (input==3){
+    drawCircle(150,150);
+    drawCircle(100,100);
+    drawCircle(50,50);
+  }
+  if (input==4){
+    drawCircle(150,150);
+    drawCircle(50,150);
+    drawCircle(50,50);
+    drawCircle(150,50);
+  }
+  if (input==5){
+    drawCircle(150,150);
+    drawCircle(50,150);
+    drawCircle(100,100);
+    drawCircle(50,50);
+    drawCircle(150,50);
+  }
+  if (input==6){
+    drawCircle(150,150);
+   drawCircle(50,150);
+   drawCircle(50,100);
+   drawCircle(150,100);
+   drawCircle(50,50);
+   drawCircle(150,50);
+  }
+
+
+  
 };
 
 
@@ -93,6 +126,9 @@ boutonRoll.addEventListener("click", ()=>{
     console.log('player2 roll')
     player2.rollDice(current2);
   }
+  rotation += 360;
+  rollAmount.style.transitionDuration = "0.5s";
+  rollAmount.style.transform = `rotate(${rotation}deg)`;
   
 });
 
@@ -131,8 +167,7 @@ if (canvas.getContext) {
 
    ctx = canvas.getContext('2d') ;
 
-   ctx.fillStyle = 'green';
-   ctx.fillRect(0, 0, 200, 200)
+   
 
    if(playerRound==1){
     ctx.beginPath();
@@ -141,7 +176,17 @@ if (canvas.getContext) {
     ctx.fill();
     ctx.stroke();
    };
+
+
+   drawCircle(150,150);
+   drawCircle(50,150);
    
+   drawCircle(50,100);
+   drawCircle(150,100);
+   drawCircle(50,50);
+   drawCircle(150,50);
+
+  /* 
    ctx.beginPath();
    ctx.fillStyle = '#EB4D4C';
    ctx.arc(50, 50, 20, 0, Math.PI * 2);
@@ -179,7 +224,7 @@ if (canvas.getContext) {
   ctx.arc(150, 100, 20, 0, Math.PI * 2);
   ctx.fill();
   ctx.stroke();
-
+   */
 
 
 } else {
@@ -193,11 +238,5 @@ canvas.addEventListener('click', () =>{
   canvas.style.transitionDuration = "0.5s";
   
   canvas.style.transform = `rotate(${rotation}deg)`;
-
-  
-  
-
-
-  
 
 });

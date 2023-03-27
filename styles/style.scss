@@ -106,8 +106,13 @@ body{
             }
             .rollAmount{
                 padding: 4em 0 4em 0 ;
-              
-                
+                background-color: antiquewhite;
+                width: 200px;
+                height: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.19);
                 .canvas:active{
                     
 

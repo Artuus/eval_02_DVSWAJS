@@ -170,6 +170,20 @@ body .playground .buttons button img {
 
 body .playground .buttons .rollAmount {
   padding: 4em 0 4em 0;
+  background-color: antiquewhite;
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.19);
+          box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.19);
 }
 
 body .background {
